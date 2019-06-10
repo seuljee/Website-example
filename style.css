@@ -89,9 +89,83 @@ a {
   background: #51be95;
 }
 .main-content {
-  background: pink;
   float: left;
   width: 70%;
+  padding-right: 20px;
+}
+.main-title {
+  font-weight: 400;
+  margin: 40px 0 20px 0;
+  font-size: 3.2rem;
+  letter-spacing: -1px;
+}
+.main-desc {
+  margin: 0 0 20px 0;
+}
+.mailing-layout {
+  padding-top: 20px;
+}
+.mailing-layout::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.mailing {
+  float: left;
+  width: 48%;
+}
+.mailing:first-child {
+  margin-right: 4%;
+}
+.mailing-title {
+  margin: 0 0 20px 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.mailing-title > a,
+.mailing-desc > a {
+  color: #20aa76;
+}
+.mailing-title > a:hover,
+.mailing-desc > a:hover {
+  color: #25c488;
+}
+.mailing-desc {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+.mailing-form {
+  margin: 10px 0 30px;
+  position: relative;
+}
+.mailing-form > label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background: grey;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+input[type="email"] {
+  width: 100%;
+  border: 1px solid #cfe3dc;
+  border-radius: 4px;
+  height: 5rem;
+  padding: 6px 80px 8px 10px;
+}
+.mailing-form-btn {
+  position: absolute;
+  top: 30%;
+  right: 1rem;
+  border: 0;
+  background: transparent;
+  color: #44b78b;
+  cursor: pointer;
+}
+.mailing-form-btn:hover {
+  color: #0c4b33;
 }
 .side-content {
   background: yellow;
