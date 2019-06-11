@@ -142,6 +142,7 @@ a {
   margin: 10px 0 30px;
   position: relative;
 }
+/* 웹 접근성을 고려해서 텍스트는 보이지 않되, 스크린 리더가 제목을 읽을 수 있다 */
 .mailing-form > label {
   position: absolute;
   width: 1px;
